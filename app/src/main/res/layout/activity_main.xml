@@ -1,18 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/background"
+    tools:context="com.example.projetmeteo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MainContainer"
+        android:visibility="visible">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/lieu_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toulouse"
+                android:textColor="#FFF"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/mise_a_jour"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05 Décembre 2023, 15:11"
+                android:textColor="#FFF"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infos_globales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ciel dégagé"
+                android:textColor="#FFF"
+                android:textSize="18dp"></TextView>
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-thin"
+                android:text="10°C"
+                android:textColor="#FFF"
+                android:textSize="90dp"></TextView>
+
+            <LinearLayout
+                android:id="@+id/ecart_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/temp_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temp min"
+                    android:textColor="#FFF"></TextView>
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"></Space>
+
+                <TextView
+                    android:id="@+id/temp_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temp max"
+                    android:textColor="#FFF"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/recherche_villes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rechercher d'autres villes"
+                android:textColor="#000"
+                android:backgroundTint="@android:color/white">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
