@@ -31,3 +31,9 @@ Liste des fonctionnalités implémentées :
 [X] Le codage d'un menu (contextuel ou non, utilisation d'un menu en resource XML)
 
 [X] L'application de pattern (Reactive programming, singleton, MVC,...) Liste :
+
+
+Points manquants :
+Problèmes sur l'utilisation de l'api de météo qui rencontre une précision très limité
+Custom Adapter non terminé
+OnBackPressed fonctionnel au départ, mais récemment ne fonctionne plus (le message s'affiche et disparait instantanément)
