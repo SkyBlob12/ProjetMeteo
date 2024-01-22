@@ -34,6 +34,9 @@ Liste des fonctionnalités implémentées :
 
 
 Points manquants :
+
 Problèmes sur l'utilisation de l'api de météo qui rencontre une précision très limité
+
 Custom Adapter non terminé
+
 OnBackPressed fonctionnel au départ, mais récemment ne fonctionne plus (le message s'affiche et disparait instantanément)
