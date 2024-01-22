@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ProjetMeteo</string>
+    <string name="dialog_localisation" />
+    <string name="ok" />
+    <string name="GPSAlertDialogTitle">GPSAlertDialogTitle</string>
+    <string name="GPSAlertDialogMessage">GPSAlertDialogMessage</string>
+    <string name="action_settings">action_settings</string>
+    <string name="cancel">cancel</string>
 </resources>
