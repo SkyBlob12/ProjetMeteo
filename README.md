@@ -2,9 +2,9 @@
 
 Liste des fonctionnalités implémentées :
 
-[ ] Utilisation de l'Api Preference
+[X] Utilisation de l'Api Preference
 
-[ ] Ecriture/lecture dans un Fichier
+[X] Ecriture/lecture dans un Fichier
 
 [X] Utilisation de SQLite
 
@@ -12,7 +12,7 @@ Liste des fonctionnalités implémentées :
 
 [ ] Utilisation de Firebase
 
-[ ] Nombre d'activités ou fragment supérieur ou égal à 3
+[X] Nombre d'activités ou fragment supérieur ou égal à 3
 
 [X] Gestion du bouton Back (message pour confirmer que l'on veut réellement quitter l'application)
 
@@ -28,6 +28,6 @@ Liste des fonctionnalités implémentées :
 
 [ ] Les taches en background (codage du démarrage d'un thread)
 
-[ ] Le codage d'un menu (contextuel ou non, utilisation d'un menu en resource XML)
+[X] Le codage d'un menu (contextuel ou non, utilisation d'un menu en resource XML)
 
 [X] L'application de pattern (Reactive programming, singleton, MVC,...) Liste :
