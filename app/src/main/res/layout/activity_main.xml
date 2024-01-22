@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:padding="25dp"
     android:background="@drawable/background"
-    tools:context="com.example.projetmeteo.MainActivity">
+    tools:context="com.example.projetmeteo.MainActivity"
+    android:id="@+id/ecran">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -46,6 +47,12 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icone"
+                android:layout_gravity="center"></ImageView>
 
             <TextView
                 android:id="@+id/status"
@@ -91,6 +98,18 @@
                     android:text="Temp max"
                     android:textColor="#FFF"></TextView>
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/error"
+                android:text="Impossible de récupérer les informations mise à jour"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:textAlignment="center"></TextView>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/recherche"

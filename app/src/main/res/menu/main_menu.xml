@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_menu_maps"
+        android:title="Ouvrir Maps"
+        android:visible="true"
+        app:showAsAction="never"
+        android:iconTint="@color/colorPrimaryDark"/>
+
+    <item
+        android:id="@+id/main_menu_accueil"
+        android:enabled="true"
+        android:title="Ouvrir Accueil"
+        android:tooltipText="Ouvrir Accueil"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
