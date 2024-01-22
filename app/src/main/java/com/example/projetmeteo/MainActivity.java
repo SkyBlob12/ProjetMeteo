@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         if (grantResults.length > 0
                 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             /*try {
-                GetMeteo
+                GetMeteo(v)
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }*/
@@ -110,6 +110,36 @@ public class MainActivity extends AppCompatActivity {
 
     //Récupérer les informations de l'API
     //Problème sur l'api vu en cours avec les coordonnées
+    //Code de récupération des infos de l'api qui est limité
+    /*
+    public void GetMeteo(View v) {
+        TextView Ville = findViewById(R.id.ville);
+        TextView Status = findViewById(R.id.status);
+        TextView Temperature = findViewById(R.id.temperature);
+        //ImageView ImageMeteo = findViewById(R.id.imageViewIcone);
+
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://www.prevision-meteo.ch/services/json/Toulouse" /*+ Ville.getText();
+    // Request a string response from the provided URL.
+    StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+            new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    try{
+                        JSONObject jObj = new JSONObject(response);
+                        JSONObject jObjCurrent = jObj.getJSONObject("current_condition");
+                        String temperature = jObjCurrent.getString("tmp");
+                        String status = jObjCurrent.getString("condition");
+                        String icon = jObjCurrent.getString("icon_big");
+                        Temperature.setText("Température : " + temperature + "°C");
+                        Status.setText(status);
+                        //Picasso.get().load(icon).resize(300,300).into(ImageMeteo);
+                    } catch (JSONException e){
+                        e.printStackTrace();
+                    }
+                }
+            }, new Response.ErrorListener() { */
+
 
     //Retour en arrière
     @Override
